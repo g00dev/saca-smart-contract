@@ -1,0 +1,24 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts",
+  "scripts": {
+    "clean": "hardhat clean",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat deploy",
+    "deploy:main": "npx hardhat --network mainnet deploy",
+    "deploy:test": "npx hardhat --network testnet deploy",
+    "deploy:base": "npx hardhat --network base deploy"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.16",
+    "hardhat-deploy": "^0.14.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
